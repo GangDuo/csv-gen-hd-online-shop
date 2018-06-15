@@ -6,7 +6,7 @@ if($args.Length -eq 0) {
 }
 
 $script:total = (Get-Content $Args[0] | ConvertFrom-CSV | Measure-Object '発注予定数' -Sum).Sum
-$script:key = [string][int64](([datetime]::UtcNow)-(get-date "1/1/1970")).TotalSeconds
+$script:key = "W" + [string][int64](([datetime]::UtcNow)-(get-date "1/1/1970")).TotalSeconds
 $script:i = 0
 $script:out = "$($env:USERPROFILE)\Desktop\$($script:key).csv"
 
@@ -34,6 +34,7 @@ Select-Object @{Name='f1';Expression={$script:key}}, `
 @{Name='f17';Expression={''}}, `
 @{Name='更新フラグ';Expression={'1'}}, `
 @{Name='総数量';Expression={$script:total}}, `
+@{Name='仕入単価';Expression={''}}, `
 @{Name='f18';Expression={'0'}}, `
 @{Name='f19';Expression={'0'}} | `
 ConvertTo-Csv -NoTypeInformation | `
