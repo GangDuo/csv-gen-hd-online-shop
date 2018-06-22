@@ -34,7 +34,7 @@ foreach($local:source in $script:sources) {
 				  @{Name='店舗';Expression={'401'}}, `
 				  $local:source.vendor, `
 				  @{Name='アイテム';Expression={'0'}}, `
-				  @{Name='品番';Expression={'0'}}, `
+				  @{Name='品番';Expression={$_."製品コード" + $_."属性１コード" + $_."属性２コード"}}, `
 				  @{Name='品名';Expression={'0'}}, `
 				  @{Name='色コード';Expression={'0'}}, `
 				  @{Name='サイズコード';Expression={'0'}}, `
