@@ -49,7 +49,7 @@ foreach($local:source in $script:sources) {
 				  @{Name='‘”—Ê';Expression={$script:total}}, `
 				  @{Name='d“ü’P‰¿';Expression={'0'}}, `
 				  @{Name='¤•i‹æ•ª';Expression={'0'}}, `
-				  @{Name='‹q’‹æ•ª';Expression={'0'}} | `
+				  @{Name='‹q’‹æ•ª';Expression={'1'}} | `
 	ConvertTo-Csv -NoTypeInformation | `
 	Select -Skip 1 | `
 	% {$_.Replace('"','')} | `
