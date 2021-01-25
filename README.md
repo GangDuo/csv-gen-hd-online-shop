@@ -1,7 +1,8 @@
-�I�����C���V���b�v�̒����f�[�^CSV����V�X�e���֎�荞�߂�`�֕ϊ�����B
+オンラインショップの注文データCSVを基幹システムへ取り込める形へ変換する。
 
-�g�p���@
-setup.bat���Ǘ��҂Ƃ��Ď��s����B
-�f�X�N�g�b�v�ɃV���[�g�J�b�g�u�����փh���b�v�v���쐬�����̂ŁA
-�I�����C���V���b�v�̒����f�[�^CSV�����̃V���[�g�J�b�g�փh���b�v����B
-�f�X�N�g�b�v�֕ϊ����ꂽCSV�K�C�����쐬�����B
+## 使用方法
+
+1. setup.batを管理者として実行する。
+2. デスクトップにショートカット「ここへドロップ」が作成されるので、
+   オンラインショップの注文データCSVをこのショートカットへドロップする。
+3. デスクトップへ変換されたCSVが作成される。
